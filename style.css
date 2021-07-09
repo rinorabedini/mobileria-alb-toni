@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.85), rgba(4, 9, 30, 0.85)),
+    url("./images/banner4.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 1% 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav img {
+  vertical-align: middle;
+  text-align: justify;
+}
+
+.logo-text {
+  color: white;
+  padding-left: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Crimson Text", sans-serif, monospace;
+}
+
+.logo-text:hover {
+  color: #f44336;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 14px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Crimson Text";
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #9ec8f8;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 64px;
+}
+
+.text-box p {
+  font-size: 18px;
+  margin: 10px 0 40px;
+  color: white;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 16px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+.close-btn {
+  display: none;
+}
+
+.open-menu-btn {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 28px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links ul li:hover {
+    background-color: #8a332d;
+  }
+  .open-menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  .close-btn {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+}
+
+.close-btn {
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.open-menu-btn {
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+/*---produktet ----*/
+
+.content-section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.content-section h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.content-section p {
+  color: #777;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: rgba(240, 118, 118, 0.6);
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 1, 1, 0.6);
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-item {
+  margin: 30px;
+}
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.shop-item-image {
+  width: 550px;
+  padding: 8px 4px;
+  transition: 0.5s;
+}
+
+.shop-item-image:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(189, 188, 188);
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shop-item-button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  color: black;
+  border: 1px solid rgb(238, 238, 238);
+  background-color: #bfc1cc;
+  cursor: pointer;
+}
+
+.shop-item-button:hover {
+  background-color: #9d9da5;
+}
+
+/*-----facilities----*/
+
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.facilities p {
+  color: #777;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.facilities-col p {
+  padding: 0;
+  color: #333;
+}
+
+/*----testimonials----*/
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.testimonials h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.testimonials p {
+  color: #777;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.testimonial-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #f0d1d1;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.testimonial-col p {
+  padding: 0;
+  color: #333;
+}
+
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+/*--Call to action--*/
+
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./images/footer.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+  line-height: -10px;
+  font-size: 30px;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*--footer---*/
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.icons {
+  margin-top: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer .icons span a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer p {
+  font-size: 24px;
+}
+
+.rinor {
+  text-decoration: none;
+  color: rgb(202, 51, 51);
+  font-size: 18px;
+}
+
+/*---about company---*/
+
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)),
+    url(./images/banner5.jpeg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.infotag {
+  font-size: 38px;
+  color: white;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding-bottom: 30px 2px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h1 {
+  padding-top: 0;
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-col p {
+  padding: 15px 0 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.about-btn {
+  border: 1px solid #f44336;
+  background-color: transparent;
+  color: #f44336;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-btn:hover {
+  color: white;
+}
+
+.text-box p {
+  font-size: 19px;
+}
+
+/*---- Kontakti ---*/
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe {
+  width: 100%;
+}
+
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-us-icons {
+  margin: 10px;
+  margin-right: 30px;
+}
+
+.contact-col div h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.contact-col div p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 0;
+}
+
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}

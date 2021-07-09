@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset='utf-8'>
+ <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+ <title>ALB-TONI</title>
+ <meta name='viewport' content='width=device-width, initial-scale=1'>
+ <link rel="stylesheet" href="style.css">
+
+ <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+ <link rel="stylesheet" href="static/styles/fontawesome/css/fontawesome-all.css">
+</head>
+
+<body>
+ <section class="sub-header">
+  <nav class="navbar">
+   <a href="index.html"> <img src="./images/my-logo.png" style="width: 350px;" alt="logo">
+   </a>
+   <div class="nav-links" id="navLinks">
+    <img src="cancel.svg" onclick="hideMenu()" style="width: 20px;" id="close-btn" alt="close" class="close-btn">
+
+    <ul>
+     <li><a href="index.html">Kryefaqja</a></li>
+     <li><a href="products.html">Produktet</a></li>
+     <li><a href="contact.html">Kontakti</a></li>
+     <li><a href="about.html">Rreth nesh</a></li>
+    </ul>
+   </div>
+   <img src="menu.svg" onclick="showMenu()" style="width: 35px;" alt="menu" id="open-menu-btn" class="open-menu-btn">
+
+  </nav>
+
+ 
+ <h1 class="infotag" >Informacione rreth kompanisë</h1>
+  
+
+ </section>
+
+
+<!-- about us section-->
+
+<section class="about-us">
+ <div class="row">
+  <div class="about-col">
+   <h1>Ndër mobileritë e para në vend <br> dhe më e mira.</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor sit illo et asperiores dolore nesciunt rem earum, doloremque eius sunt ratione voluptatibus accusantium corrupti beatae officia enim culpa assumenda explicabo. Quo, vero atque commodi quod dolores nisi, similique dicta dolorem pariatur quos earum! Dicta ipsa doloremque fuga fugit assumenda vel. Sit totam, nobis possimus, recusandae eligendi voluptas deserunt minus ducimus quidem accusamus harum! Temporibus molestiae cumque explicabo aliquam, ut amet totam, sed sint natus suscipit excepturi rerum accusantium minus?</p>
+   <a href="index.html" class="hero-btn about-btn" >Eksploro</a>
+  </div>
+  <div class="about-col">
+   <img src="./images/about.jpeg" alt="about">
+  </div>
+ </div>
+</section>
+
+
+ <!--Footer-->
+ 
+ <section class="footer">
+  <h4>Rreth kompanisë</h4>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eius. Deleniti fuga minima facere
+   perspiciatis, <br> magnam ut veritatis sapiente optio suscipit laboriosam consequuntur quaerat? </p>
+  <br>
+  <div class="icons">
+ 
+   <span class="facebook"> <a href="https://www.facebook.com/Mobileria-Alb-Toni-1440513082849353" target="_blank"> <img
+      src="./images/logo-facebook.svg" style="height: 40px" ; alt="facebook"> </a></span>
+ 
+   <span class="instagram"> <a href="https://www.instagram.com/albtonimobile/" target="_blank"> <img
+      src="./images/logo-instagram.svg" style="height: 40px" ; alt="instagram"> </a></span>
+ 
+   <span class="mail"> <a href="mailto:rinor.abedinii@gmail.com" target="_blank"> <img src="./images/send-outline.svg"
+      style="height: 40px" ; alt="email"> </a></span>
+ 
+   <span class="linkedin"> <a
+     href="https://www.linkedin.com/in/blerton-syla-25184016b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2BK%2FvS9ZhRTGK%2FoWumZt8LQ%3D%3D"
+     target="_blank"> <img src="./images/logo-linkedin.svg" style="height: 40px;" alt="linkedin"></a></span>
+  </div>
+  <br>
+  <span class="madeby">Bërë me <img src="./images/heart.svg" style="width: 20px;" alt="zemer"> nga <a
+    href="https://www.linkedin.com/in/rinor-abedini-31a35914b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BheTHpL6LQBmiJpgJmk3d0A%3D%3D"
+    class="rinor"> Rinor Abedini </a>.</span>
+ </section>
+ 
+ 
+ 
+ <script>
+  var navLinks = document.getElementById('navLinks');
+  function showMenu() {
+   navLinks.style.right = '0';
+  }
+
+  function hideMenu() {
+   navLinks.style.right = '-200px';
+  }
+ </script>
+
+</body>
+</html>
